@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(160, 139, 0, 0.366);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: rgb(16, 1, 65);/*rgb(11, 85, 26) verde oscuro*/
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform:uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: rgb(5, 12, 105);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/dron3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00000056;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;  /*#fff*/
+    padding: 0 100px;
+}
+
+
+.inicio {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #eaffee;  /*#fff*/
+    padding: 0 100px; 
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 { /*Nosotros*/
+    height: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentprod { /*Productos*/
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 40px;
+    background: rgba(150, 120, 2, 0.301); /*negro claro #1d1f1d , verde oscuro #106910 , verde transparente rgba(2, 143, 2, 0.401)*/
+}
+
+.sauprod { /*Productos*/
+    padding: 5px;
+    background: rgba(160, 139, 0, 0.366); /*negro claro #1d1f1d , verde oscuro #106910 , verde transparente rgba(2, 143, 2, 0.401)*/
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: rgba(160, 139, 0, 0.366); /*#101010*/
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .box1 { /*Pertenece a mision y vision, Nosotros*/
+    height: 15rem;
+    width: 17rem;
+    background: rgba(160, 139, 0, 0.366); /*#101010*/
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .boxprod { /* Productos*/
+    height: 15rem;
+    width: 17rem;
+    background: rgba(160, 139, 0, 0.366); /*#101010*/
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+
+.box-container .box i {
+    height:3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box1 i { /*Pertenece a mision y vision, Nosotros*/
+    height:3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .boxprod img { /*Productos*/
+    height:240px;
+    width: 275px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 0rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .box1 h3 { /*Pertenece a mision y vision, Nosotros*/
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .boxprod h3 { /*Productos*/
+    font-size: 20px;
+    color: #0000005a;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.box-container .box1 p { /*Pertenece a mision y vision, Nosotros*/
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.box-container .boxprod p { /*Productos*/
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background:rgba(150, 120, 2, 0.301); /*negro medio oscuro #171717*/
+}
+
+.price {
+    background: url(img/cultivo2.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: rgba(184, 128, 6, 0.633); /*negro medio oscuro #171717*/
+    padding-bottom: 0;
+}
+
+
+
+.box-mision p,
+.box-vision p {
+    font-size: 16px;
+    color: #000;
+    flex: 1; /* Hace que el contenido ocupe el espacio restante verticalmente */
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+/*ESTO ES PARA LAS ANIMACIONES DE LA IMAGEN DE LOS PRODUCTOS*/
+.product-image {
+    cursor: pointer;
+}
+/* Agrega una animación cuando se hace clic en la imagen */
+.product-image.active {
+    opacity: 0.7; /* Reducción de la opacidad */
+    transition: opacity 0.3s ease; /* Duración y suavidad de la transición */
+}
+
+.product-info {
+    display: none;
+}
+
+.product-info.show {
+    display: block;
+}
+
+
+/* Estilos para los botones de paginación */
+.custom-button {
+    background-color: rgb(16, 1, 65);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: rgb(5, 12, 105);
+}
+
+/* Agregar una animación suave para los botones de paginación */
+.pagination button {
+    transition: transform 0.2s;
+}
+
+/* Aplicar estilos a los botones "Anterior" y "Siguiente" */
+.prev-page {
+    margin-right: 10px;
+}
+
+.next-page {
+    margin-left: 10px;
+}
