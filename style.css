@@ -9,27 +9,33 @@
 body {
     text-align: center;
     font-family: sans-serif;
-    background-color: rgba(160, 139, 0, 0.366);
+    /*background-color: rgba(160, 139, 0, 0.366); */
+    background-color: #f8f8f8; /* Color de fondo más claro */
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items:center;
+    background-color: #3498db; /* Azul claro para la sección de encabezado */
 }
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background-color: rgb(16, 1, 65);/*rgb(11, 85, 26) verde oscuro*/
+    /*background-color: rgb(16, 1, 65);*//*rgb(11, 85, 26) verde oscuro*/
+    background-color: #2c3e50; /* Azul oscuro para la barra de navegación */
     position: fixed;
     width: 100%;
     z-index: 100;
 }
 .navbar {
     display: flex;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -38,22 +44,27 @@ body {
 
 .logo a {
     text-decoration: none;
-    color: #fff;
+   /* color: #fff;*/
+    color: #ecf0f1;
     text-transform:uppercase;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 120%; /* El 120% del tamaño de la fuente base */
 }
 
 .navbar a {
     display: block;
     padding: 23px 20px;
     color: #fff;
+    /* color: #fff;*/
+    color: #ecf0f1;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
 }
 
 .navbar a:hover {
-    background: rgb(5, 12, 105);
+    /*background: rgb(5, 12, 105);*/
+    background-color: #34495e; /* Color de fondo más oscuro al pasar el ratón */
 }
 
 .header {
@@ -70,10 +81,12 @@ body {
 
 .title{
     margin-bottom: 40px;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: 3em; /* 3 veces el tamaño de la fuente base */
     font-weight: 600;
     text-transform: uppercase;
-    color: #fff;
+    /*color: #fff;*/
+    color: #ffffff; /* Texto blanco para títulos y texto de introducción */
 }
 
 .title1 {
@@ -95,7 +108,8 @@ p {
 .inicio {
     margin-bottom: 40px;
     font-size: 20px;
-    color: #eaffee;  /*#fff*/
+    /*color: #fff;*/
+    color: #ffffff; /* Texto blanco para títulos y texto de introducción */
     padding: 0 100px; 
 }
 
@@ -104,13 +118,16 @@ p {
     margin-top: 15px;
     padding: 10px 40px;
     border: 2px solid #9c27b0;
-    color: #fff;
+    /* color: #fff;*/
+    color: #ecf0f1;
     text-decoration: none;
     background: #9c27b0;
 }
 
 .btn:hover {
-    background: none;
+   background: none;
+
+   background-color: #34495e; /* Color de fondo más oscuro al pasar el ratón */
 }
 
 .btn-home {
@@ -119,6 +136,7 @@ p {
 
 .btn-home a {
     margin: 0 10px;
+    color: #ffffff; /* Texto blanco para títulos y texto de introducción */
 }
 
 .content {
@@ -138,12 +156,13 @@ p {
 }
 
 .contentprod { /*Productos*/
-    height: 100vh;
+    height: 120vh;
     margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ecf0f1; /* Fondo más claro para la sección de productos */
 }
 
 .sau {
@@ -157,10 +176,13 @@ p {
 }
 
 .box-container {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center;*/
+    display: flex;
+    justify-content: space-around; /* O space-between según tus preferencias */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en varias filas */
 }
 
 
@@ -182,16 +204,20 @@ p {
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
     margin: 2rem;
+    
 }
 
 .box-container .boxprod { /* Productos*/
     height: 15rem;
     width: 17rem;
-    background: rgba(160, 139, 0, 0.366); /*#101010*/
+   /* background: rgba(160, 139, 0, 0.366);*/ /*#101010*/
+    background-color: #ffffff; /* Fondo blanco para las cajas de productos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
     margin: 2rem;
+    
 }
 
 
@@ -289,6 +315,26 @@ p {
 
 
 @media (max-width: 768px) {
+    .box-container {
+        flex-direction: column; /* Coloca las cajas en columnas en pantallas más pequeñas */
+        align-items: center; /* Centra las cajas en el eje transversal */
+    }
+
+    .box {
+        width: 100%; /* Haz que las cajas ocupen el ancho completo */
+        margin-bottom: 20px; /* Añade espacio entre las cajas */
+    }
+
+    /* Estilos específicos para pantallas más pequeñas (tabletas y móviles) */
+    body {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .head {
+        height: auto; /* Otra adaptación necesaria para tamaños más pequeños */
+    }
+    /* ------------------------------------------------------------------------chatgpt */
+
     .title {
         margin-bottom: 0;
         font-size: 40px;
@@ -305,6 +351,11 @@ p {
 .product-image {
     cursor: pointer;
 }
+.product-image img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
 /* Agrega una animación cuando se hace clic en la imagen */
 .product-image.active {
     opacity: 0.7; /* Reducción de la opacidad */
@@ -313,6 +364,18 @@ p {
 
 .product-info {
     display: none;
+    border-radius: 10px;
+    background-color: #ffffff; /* Fondo blanco para la información del producto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+   
+}
+
+.product-info p {
+    color: #333333; /* Texto más oscuro para la información del producto */
+}
+
+.product-info h3 {
+    color: #3498db; /* Azul claro para los títulos de información del producto */
 }
 
 .product-info.show {
@@ -339,13 +402,24 @@ p {
 /* Agregar una animación suave para los botones de paginación */
 .pagination button {
     transition: transform 0.2s;
+    background-color: #3498db; /* Azul claro para los botones de paginación */
+    color: #ffffff; /* Texto blanco para los botones de paginación */
 }
 
 /* Aplicar estilos a los botones "Anterior" y "Siguiente" */
 .prev-page {
     margin-right: 10px;
+    background-color: #3498db; /* Azul claro para los botones de paginación */
+    color: #ffffff; /* Texto blanco para los botones de paginación */
 }
 
 .next-page {
     margin-left: 10px;
+    background-color: #3498db; /* Azul claro para los botones de paginación */
+    color: #ffffff; /* Texto blanco para los botones de paginación */
+}
+.pagination button:hover,
+.prev-page:hover,
+.next-page:hover {
+    background-color: #2980b9; /* Color de fondo más oscuro al pasar el ratón */
 }
